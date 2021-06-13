@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 
-const Home = () => {
+const Shell = () => {
   let location = useLocation();
   console.log(location);
   
@@ -22,4 +22,4 @@ const Home = () => {
     </div>
 }
 
-export default Home;
+export default Shell;

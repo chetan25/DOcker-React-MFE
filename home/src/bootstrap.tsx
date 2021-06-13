@@ -19,11 +19,12 @@ interface MountOptions {
 }
 
 const mountHomeApp = (element: HTMLElement, options?: MountOptions) => {
-    console.log('mountHomeApp');
+    console.log('mountHomeApp', options);
     const history = options?.defaultHistory ? options.defaultHistory : createMemoryHistory({
         initialEntries: [options?.initialPath || '']
     });
 
+    console.log('history', history);
     if (options) {
         history.listen(options.onNavigate);
     }

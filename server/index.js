@@ -10,8 +10,10 @@ app.use(bodyParser.json());
 
 // Express route handlers
 
-app.get("/", (req, res) => {
-    res.send("Hi");
+app.get("/getURL", (req, res) => {
+    res.send({
+        url: "//localhost:3001"
+    });
 });
 
 

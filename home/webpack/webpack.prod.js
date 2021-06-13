@@ -10,17 +10,17 @@ const prodConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
-        publicPath: '/container/latest/' // used to fix the path issue in production. This will tell HtmlWebpackPlugin to access file using this path 
+        publicPath: '/home/latest/' // used to fix the path issue in production. This will tell HtmlWebpackPlugin to access file using this path 
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html'
         }),
         new ModuleFederationPlugin({
-            name: 'container',
-            remotes: {
-                'marketing': `marketing@${domain}/marketing/latest/remoteEntry.js`,
-                'auth': `auth@${domain}/auth/latest/remoteEntry.js`
+            name: 'home',
+            filename: 'remoteEntry.js',
+            exposes: {
+                './HomeApp': './src/bootstrap'
             },
             shared: packageJson.dependencies // optional way to list all dependencies as shared
         })
