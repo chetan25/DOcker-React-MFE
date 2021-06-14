@@ -24,9 +24,9 @@
   
 
 #### Current workflow(without docker and nginx)
-- Shell - to run the shell - navigate to shell directory and run `npm start` this will fire up a dev server at localhost:3000. This is the Container App that loads the remote Apps.
-- Home - to run the home, navigate to the home directory and run  - `npm start` this will fire up a dev server at localhost:3001.This is the remote App, that is loaded in Container.
-- Server -(express server) - Navigate to the server directory and run `npm start`. This start a express server , which returns the dynamic path `//localhost:3001` to load Remote Home App.
+- Shell - to run the shell - navigate to shell directory and run `npm ci && npm start` this will fire up a dev server at localhost:3000. This is the Container App that loads the remote Apps.
+- Home - to run the home, navigate to the home directory and run  - `npm ci && npm start` this will fire up a dev server at localhost:3001.This is the remote App, that is loaded in Container.
+- Server -(express server) - Navigate to the server directory and run `npm ci && npm start`. This start a express server , which returns the dynamic path `//localhost:3001` to load Remote Home App.
 - Note the path `//localhost:3001`, we specify a relative path, and not a complete path with as `http://localhost:3001`
 
 
