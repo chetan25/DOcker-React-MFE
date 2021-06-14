@@ -29,6 +29,8 @@
 - Server -(express server) - Navigate to the server directory and run `npm ci && npm start`. This start a express server , which returns the dynamic path `//localhost:3001` to load Remote Home App.
 - Note the path `//localhost:3001`, we specify a relative path, and not a complete path with as `http://localhost:3001`
 
+Now navigate to - `http://localhost:3000`
+
 
 #### Routing MFE
 - Browser History - look at the path portion of the url(everything after domain), to figure out what path user is visiting. eg 'http://app.com/test/home' ==> user is visiting '/test/home'
