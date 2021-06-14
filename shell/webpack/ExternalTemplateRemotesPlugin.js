@@ -1,5 +1,6 @@
 // plugin taken from  https://gist.github.com/matthewma7/915b28846ad99d582e6b4ddea6dfc309
 // From: https://github.com/module-federation/module-federation-examples/issues/566
+// FORM https://github.com/module-federation/module-federation-examples/pull/557
 const extractUrlAndGlobal = require('webpack/lib/util/extractUrlAndGlobal');
 const { RawSource } = require('webpack-sources');
 
