@@ -1,3 +1,10 @@
+---
+title: React MFE and DOcker.
+excerpt: Simple React Micro frontends build with docker containe.
+Tools: ['Docker', 'React', 'Redux', 'Webpack']
+---
+
+
 # Multi Container with MFE
 
 - Front-End
