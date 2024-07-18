@@ -1,7 +1,7 @@
 ---
 Title: React MFE and DOcker.
 Excerpt: Simple React Micro frontends build with docker containe.
-Tech: 'Docker', 'React', 'Redux', 'Webpack'
+Tech: "Docker, React, Redux, Webpack"
 ---
 
 
